@@ -1,4 +1,4 @@
-<h1 align="center"> python-boilerplate/uv-template </h1>
+<h1 align="center"> 4Urban/uv-template </h1>
 
 <p align="center">
 A comprehensive template for quickly starting new Python projects with modern development tools and best practices.
@@ -8,10 +8,9 @@ A comprehensive template for quickly starting new Python projects with modern de
 
 ![Python Boilerplate](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![uv](https://img.shields.io/badge/uv-0.7.13-purple.svg)
-![Docker](https://img.shields.io/badge/docker-enabled-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-[![GitHub Actions Status](https://github.com/monok8i/python-boilerplate/actions/workflows/code-quality.yml/badge.svg)](https://github.com/monok8i/python-boilerplate/actions/workflows/code-quality.yml)
-[![GitHub Actions Status](https://github.com/monok8i/python-boilerplate/actions/workflows/codeql.yml/badge.svg)](https://github.com/monok8i/python-boilerplate/actions/workflows/codeql.yml)
+[![GitHub Actions Status](https://github.com/4Urban/uv-template/actions/workflows/code-quality.yml/badge.svg)](https://github.com/4Urban/uv-template/actions/workflows/code-quality.yml)
+[![GitHub Actions Status](https://github.com/4Urban/uv-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/4Urban/uv-template/actions/workflows/codeql.yml)
 </div>
 
 
@@ -19,9 +18,7 @@ A comprehensive template for quickly starting new Python projects with modern de
 
 - **Python 3.10+**
 - **[uv](https://docs.astral.sh/uv/)** — Ultra-fast Python package installer and dependency resolver
-- **[Docker Support](https://docs.docker.com/)** — Multi-stage Dockerfiles for both local development and clean production containers
 - **[GitHub Actions CI/CD](https://docs.github.com/en/actions)** — Automated pipelines for code quality checks, testing, security scanning, and Python compatibility validation
-- **[Dev Containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)** — Pre-configured development environment for codespaces or remote development
 - **[Code Quality Tools](https://docs.astral.sh/ruff/)** — Integrated linting and formatting with [Ruff](https://docs.astral.sh/ruff/), static type checking with [MyPy](https://mypy.readthedocs.io/en/stable/), comprehensive testing with [Pytest](https://docs.pytest.org/en/stable/) and checking minimal Python version to run your code (without dependencies) with [Vermin](https://github.com/netromdk/vermin)
 - **[Pre-commit Hooks](https://pre-commit.com/)** — Automated code quality enforcement (linting, formatting, and tests before every commit)
 - **[Commitizen](https://commitizen-tools.github.io/commitizen/)** — Standardized commit messages and automated changelog/versioning
@@ -35,7 +32,6 @@ A comprehensive template for quickly starting new Python projects with modern de
 
 - Python 3.10+
 - [uv](https://docs.astral.sh/uv) package manager
-- Docker (optional, for containerized development)
 - Git
 
 
@@ -43,7 +39,7 @@ A comprehensive template for quickly starting new Python projects with modern de
 
 > **Note**: This is a boilerplate template.
 > After cloning or generating your project, remember to:
-> - Update your project name in `pyproject.toml` and `docker-compose.yml`
+> - Update your project name in `pyproject.toml`
 > - Replace this README with documentation specific to your project
 > - Configure environment variables in `.env.development` and `.env.production`
 > - Customize the Makefile commands as needed for your project
@@ -53,7 +49,7 @@ A comprehensive template for quickly starting new Python projects with modern de
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/python-boilerplate/uv-template
+    git clone https://github.com/4Urban/uv-template.git
     cd uv-template
     ```
 
@@ -92,18 +88,11 @@ A comprehensive template for quickly starting new Python projects with modern de
 ### Development Options:
 
 1. **Local Development:**
-   Use `uv` and Makefile for local development without containers.
-
-2. **Dockerized Development:**
-   Utilize Docker and Docker Compose for isolated, containerized workflows.
-   See [Docker instructions](https://python-boilerplate.github.io/uv-template/features/docker/) in the documentation.
-
-3. **GitHub Codespaces:**
-   Launch in [GitHub Codespaces](https://github.com/features/codespaces) for instant cloud-based development with pre-configured devcontainer support.
+   Use `uv` and Makefile for local development.
 
 ## 📚 Documentation
 
-**For detailed guides and advanced scenarios, see the [full documentation](https://python-boilerplate.github.io).**
+**For detailed guides and advanced scenarios, see the [upstream documentation](https://python-boilerplate.github.io/uv-template/).**
 
 
 ## 📄 License

@@ -25,11 +25,11 @@ repos:
     # Run pytest.
     - id: pytest
       name: pytest
-      entry: uv run pytest
+      entry: bash -c 'if find tests -type f -name "test_*.py" -print -quit | grep -q .; then uv run pytest -v; else echo "No tests found; skipping pytest."; fi'
       language: system
       types: [python]
       pass_filenames: false
-      args: [ -v ]
+      args: []
 
 - repo: https://github.com/commitizen-tools/commitizen
   rev: v4.8.3

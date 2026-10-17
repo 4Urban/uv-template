@@ -44,6 +44,15 @@ A comprehensive template for quickly starting new Python projects with modern de
 > - Configure environment variables in `.env.development` and `.env.production`
 > - Customize the Makefile commands as needed for your project
 
+### CodeQL on GitHub Actions
+
+CodeQL runs automatically for public repositories. For private repositories,
+it is skipped by default because code scanning requires GitHub Code Security.
+To opt in, add the repository Actions variable `ENABLE_CODEQL` with value
+`true` under **Settings → Secrets and variables → Actions → Variables**.
+Private repositories must have a GitHub Code Security license enabled before
+opting in, or CodeQL result uploads will fail.
+
 
 ## ⚡ Quick Start
 
